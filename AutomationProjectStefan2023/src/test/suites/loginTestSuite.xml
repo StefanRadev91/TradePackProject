@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite thread-count="2" verbose="1" name="AutomationSuites"
+       annotations="JDK" parallel="tests">
+
+    <test name="SuccessLoginSuite">
+        <classes>
+            <class name="StefanProjectTests.TradePackLoginTest"/>
+        </classes>
+    </test>
+    <test name="UnSuccessLoginSuite">
+        <classes>
+            <class name="StefanProjectTests.TradePackUnsuccessfulLoginTest"/>
+        </classes>
+    </test>
+</suite>
